@@ -17,33 +17,31 @@
     <main>
         <div class="left">
             <div class="picker">
-                <label>
-                    Head
+                <label for="head-dropdown">
+                    Choose any head:
                     <select id="head-dropdown">
-                        <option value="bird">Bird</option>
-                        <option value="duck">Duck</option>
-                        <option value="dog">Dog</option>
-                        <option value="horse">Horse</option>
+                        <option value="Cat">Cat</option>
+                        <option value="Meerkat">Meerkat</option>
+                        <option value="Goat">Goat</option>
                     </select>
                 </label>
-                <label>
+                <label for="middle-dropdown">
                     Middle
                     <select id="middle-dropdown">
-                        <option value="blue">Blue</option>
-                        <option value="dress">Fancy</option>
-                        <option value="pink">Pink</option>
-                        <option value="red">Red</option>
+                        <option value="Christmas">Christmas</option>
+                        <option value="Llama">Llama</option>
+                        <option value="Pepperoni">Pepperoni</option>
                     </select>
                 </label>
-                <label>
+                <label for="bottom-dropdown">
                     Bottom
                     <select id="bottom-dropdown">
-                        <option value="leg">Single Leg</option>
-                        <option value="white">White Pants</option>
-                        <option value="blue">Blue Jeans</option>
+                        <option value="Cargo">Cargo</option>
+                        <option value="Pretty">Pretty</option>
+                        <option value="Red">Red</option>
                     </select>
                 </label>
-                <label>
+                <label for="catchphrase-input">
                     Add a catch phrase
                     <input id="catchphrase-input" />
                     <button id="catchphrase-button">Add</button>
@@ -52,7 +50,7 @@
             <div id="stats">
                 <p id="report"></p>
                 <div id="catchphrases">
-                    
+
                 </div>
             </div>
         </div>
@@ -65,7 +63,7 @@
                 <div class="bg bottom" id="bottom">
                 </div>
             </div>
-            
+
         </div>
     </main>
     <script type="module" src="./app.js"></script>
