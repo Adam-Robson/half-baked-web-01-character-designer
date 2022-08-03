@@ -53,10 +53,8 @@ function displayStats() {
 function displayCatchphrases() {
     catchphrasesEl.textContent = '';
     for (let phrase of characterCatchPhrases) {
-        characterCatchPhrases.forEach((phrase) => {
             const pTag = document.createElement('p');
             pTag.textContent = phrase;
             catchphrasesEl.append(pTag);
-        });
     }
 }
