@@ -14,28 +14,28 @@ const catchphraseButton = document.getElementById('catchphrase-button');
 let headChangesCount = 0;
 let middleChangesCount = 0;
 let bottomChangesCount = 0;
-let totalChangesCount = headChangesCount + middleChangesCount + bottomChangesCount;
+let totalChangesCount = 0;
 // set state for all of the character's catchphrases
 let characterCatchPhrases = [];
 
 headDropdown.addEventListener('change', () => {
     const value = headDropdown.value;
     headChangesCount++;
-    headEl.style.backgroundImage.url(`./assets/${value}-head.png`);
+    headEl.style.backgroundImage = `url('./assets/${value}-head.png')`;
     displayStats();
 }),
 
 middleDropdown.addEventListener('change', () => {
     const value = middleDropdown.value;
     middleChangesCount++;
-    middleEl.style.backgroundImage.url(`./assets/${value}-middle.png`);
+    middleEl.style.backgroundImage = `url('./assets/${value}-middle.png')`;
     displayStats();
 }),
 
 bottomDropdown.addEventListener('change', () => {
     const value = bottomDropdown.value;
     bottomChangesCount++;
-    bottomEl.style.backgroundImage.url(`./assets/${value}-bottom.png`);
+    bottomEl.style.backgroundImage = `url('./assets/${value}-bottom.png')`;
     displayStats();
 }),
 
@@ -47,7 +47,7 @@ catchphraseButton.addEventListener('click', () => {
 });
 
 function displayStats() {
-    reportEl.textContent = `You have made ${totalChangesCount} changes total. Head: ${headChangesCount} Middle: ${middleChangesCount}Bottom: ${bottomChangesCount} `;
+    reportEl.textContent = `You have made ${headChangesCount + middleChangesCount + bottomChangesCount} changes total. Head: ${headChangesCount} Middle: ${middleChangesCount}Bottom: ${bottomChangesCount} `;
 }
 
 function displayCatchphrases() {
