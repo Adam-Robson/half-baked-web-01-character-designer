@@ -51,7 +51,7 @@ function displayStats() {
 }
 
 function displayCatchphrases() {
-    catchphrasesEl.value = '';
+    catchphrasesEl.textContent = '';
     for (let phrase of characterCatchPhrases) {
         characterCatchPhrases.forEach((phrase) => {
             const pTag = document.createElement('p');
