@@ -38,6 +38,9 @@ bottomDropdown.addEventListener('change', () => {
     bottomEl.style.backgroundImage = `url('./assets/${value}-bottom.png')`;
     displayStats();
 }),
+function displayStats() {
+    reportEl.textContent = `You have made ${headChangesCount + middleChangesCount + bottomChangesCount} changes total. Head: ${headChangesCount} Middle: ${middleChangesCount}Bottom: ${bottomChangesCount} `;
+}
 
 catchphraseButton.addEventListener('click', () => {
     const nuCatchphrase = catchphraseInput.value;
