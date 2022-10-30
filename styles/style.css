@@ -102,14 +102,24 @@ main {
     justify-content: center;
     align-items: center;
     height: 100%;
+    border:rgba(84, 135, 149, 0.925) solid 1px;
+}
+
+#title {
+    position: absolute;
+    font-size: 2.5em;
+    top: -80px;
+    font-weight: 100;
+
 }
 
 .picker {
     display: flex;
     flex-direction: column;
-    background-color: rgb(182, 228, 235);
-    border: 3px rgba(84, 135, 149, 0.925) solid;
+    background-color: rgb(147, 189, 196);
+    border: 1px rgba(84, 135, 149, 0.925) solid;
     padding: 4px;
+    box-shadow: 1px 1px 5px;
 }
 
 .left, .right {
