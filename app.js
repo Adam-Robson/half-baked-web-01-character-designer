@@ -24,22 +24,22 @@ headDropdown.addEventListener('change', () => {
     displayStats();
 }),
 
-    middleDropdown.addEventListener('change', () => {
-        const value = middleDropdown.value;
-        middleChangesCount++;
-        middleEl.style.backgroundImage = `url('./assets/${value}-middle.png')`;
-        displayStats();
-    }),
+middleDropdown.addEventListener('change', () => {
+    const value = middleDropdown.value;
+    middleChangesCount++;
+    middleEl.style.backgroundImage = `url('./assets/${value}-middle.png')`;
+    displayStats();
+}),
 
-    bottomDropdown.addEventListener('change', () => {
-        const value = bottomDropdown.value;
-        bottomChangesCount++;
-        bottomEl.style.backgroundImage = `url('./assets/${value}-pants.png')`;
-        displayStats();
-    }),
-    function displayStats() {
-        reportEl.textContent = `You have made ${headChangesCount + middleChangesCount + bottomChangesCount} changes total. Head: ${headChangesCount} Middle: ${middleChangesCount}Bottom: ${bottomChangesCount} `;
-    };
+bottomDropdown.addEventListener('change', () => {
+    const value = bottomDropdown.value;
+    bottomChangesCount++;
+    bottomEl.style.backgroundImage = `url('./assets/${value}-pants.png')`;
+    displayStats();
+}),
+function displayStats() {
+    reportEl.textContent = `You have made ${headChangesCount + middleChangesCount + bottomChangesCount} changes total. Head: ${headChangesCount} Middle: ${middleChangesCount}Bottom: ${bottomChangesCount} `;
+};
 
 catchphraseButton.addEventListener('click', () => {
     const nuCatchphrase = catchphraseInput.value;
