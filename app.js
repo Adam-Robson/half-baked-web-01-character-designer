@@ -14,7 +14,6 @@ const catchphraseButton = document.getElementById('catchphrase-button');
 let headChangesCount = 0;
 let middleChangesCount = 0;
 let bottomChangesCount = 0;
-let totalChangesCount = 0;
 // set state for all of the character's catchphrases
 let characterCatchPhrases = [];
 
@@ -25,22 +24,22 @@ headDropdown.addEventListener('change', () => {
     displayStats();
 }),
 
-middleDropdown.addEventListener('change', () => {
-    const value = middleDropdown.value;
-    middleChangesCount++;
-    middleEl.style.backgroundImage = `url('./assets/${value}-middle.png')`;
-    displayStats();
-}),
+    middleDropdown.addEventListener('change', () => {
+        const value = middleDropdown.value;
+        middleChangesCount++;
+        middleEl.style.backgroundImage = `url('./assets/${value}-middle.png')`;
+        displayStats();
+    }),
 
-bottomDropdown.addEventListener('change', () => {
-    const value = bottomDropdown.value;
-    bottomChangesCount++;
-    bottomEl.style.backgroundImage = `url('./assets/${value}-pants.png')`;
-    displayStats();
-}),
-function displayStats() {
-    reportEl.textContent = `You have made ${headChangesCount + middleChangesCount + bottomChangesCount} changes total. Head: ${headChangesCount} Middle: ${middleChangesCount}Bottom: ${bottomChangesCount} `;
-}
+    bottomDropdown.addEventListener('change', () => {
+        const value = bottomDropdown.value;
+        bottomChangesCount++;
+        bottomEl.style.backgroundImage = `url('./assets/${value}-pants.png')`;
+        displayStats();
+    }),
+    function displayStats() {
+        reportEl.textContent = `You have made ${headChangesCount + middleChangesCount + bottomChangesCount} changes total. Head: ${headChangesCount} Middle: ${middleChangesCount}Bottom: ${bottomChangesCount} `;
+    };
 
 catchphraseButton.addEventListener('click', () => {
     const nuCatchphrase = catchphraseInput.value;
@@ -56,8 +55,8 @@ function displayStats() {
 function displayCatchphrases() {
     catchphrasesEl.textContent = '';
     for (let phrase of characterCatchPhrases) {
-            const pTag = document.createElement('p');
-            pTag.textContent = phrase;
-            catchphrasesEl.append(pTag);
+        const pTag = document.createElement('p');
+        pTag.textContent = phrase;
+        catchphrasesEl.append(pTag);
     }
 }
