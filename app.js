@@ -28,14 +28,14 @@ headDropdown.addEventListener('change', () => {
 middleDropdown.addEventListener('change', () => {
     const value = middleDropdown.value;
     middleChangesCount++;
-    middleEl.style.backgroundImage = `url('./assets/${value}-middle.png')`;
+    middleEl.style.backgroundImage = `url('./assets/${value}-shirt.png')`;
     displayStats();
 }),
 
 bottomDropdown.addEventListener('change', () => {
     const value = bottomDropdown.value;
     bottomChangesCount++;
-    bottomEl.style.backgroundImage = `url('./assets/${value}-bottom.png')`;
+    bottomEl.style.backgroundImage = `url('./assets/${value}-pants.png')`;
     displayStats();
 }),
 function displayStats() {
