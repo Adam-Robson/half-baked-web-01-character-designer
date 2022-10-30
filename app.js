@@ -28,7 +28,7 @@ headDropdown.addEventListener('change', () => {
 middleDropdown.addEventListener('change', () => {
     const value = middleDropdown.value;
     middleChangesCount++;
-    middleEl.style.backgroundImage = `url('./assets/${value}-shirt.png')`;
+    middleEl.style.backgroundImage = `url('./assets/${value}-middle.png')`;
     displayStats();
 }),
 

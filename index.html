@@ -16,36 +16,31 @@
 
     <main>
         <div class="left">
-                <div id="catchphrases"></div>
-
             <div class="picker">
                 <label class="head-label">
                     Head
                     <select id="head-dropdown">
-                        <option value="sam">sam</option>
-                        <option value="kye">kye</option>
-                        <option value="pj">pj</option>
+                        <option class="option" value="sam">sam</option>
+                        <option value="kye" class="option">kye</option>
+                        <option value="pj" class="option">pj</option>
                     </select>
                 </label>
                 <label class="middle-label">
                     Middle
                     <select id="middle-dropdown">
-                        <option value="yinyang">yinyang</option>
-                        <option value="wolflady">wolflady</option>
-                        <option value="santa">santa</option>
-                        <option value="pinky">pinky</option>
+                        <option class="option" value="yinyang">yinyang</option>
+                        <option class="option" value="wolflady">wolflady</option>
+                        <option value="santa" class="option">santa</option>
 
                     </select>
                 </label>
                 <label class="bottom-label">
                     Bottom
                     <select id="bottom-dropdown">
-                        <option value="black">red</option>
-                        <option value="brown">cargo</option>
-                        <option value="green">flower</option>
-                        <option value="pink">flower</option>
-                        <option value="shorts">shorts</option>
-                        <option value="sweats">sweats</option>
+                        <option class="option" value="pink">pink</option>
+                        <option value="black" class="option">black</option>
+                        <option class="option" value="shorts">shorts</option>
+
 
 
                     </select>
@@ -55,6 +50,9 @@
                     <input id="catchphrase-input" />
                     <button id="catchphrase-button">Add</button>
                 </label>
+                    <div id="catchphrases"></div>
+
+
             </div>
             <div id="stats">
                 <p id="report"></p>
