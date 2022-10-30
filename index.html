@@ -16,8 +16,10 @@
 
     <main>
         <div class="left">
+                <div id="catchphrases"></div>
+
             <div class="picker">
-                <label>
+                <label class="head-label">
                     Head
                     <select id="head-dropdown">
                         <option value="sam">sam</option>
@@ -25,7 +27,7 @@
                         <option value="pj">pj</option>
                     </select>
                 </label>
-                <label>
+                <label class="middle-label">
                     Middle
                     <select id="middle-dropdown">
                         <option value="yinyang">yinyang</option>
@@ -35,7 +37,7 @@
 
                     </select>
                 </label>
-                <label>
+                <label class="bottom-label">
                     Bottom
                     <select id="bottom-dropdown">
                         <option value="black">red</option>
@@ -48,7 +50,7 @@
 
                     </select>
                 </label>
-                <label>
+                <label class="catchphrase-label">
                     Add a catch phrase
                     <input id="catchphrase-input" />
                     <button id="catchphrase-button">Add</button>
@@ -56,9 +58,7 @@
             </div>
             <div id="stats">
                 <p id="report"></p>
-                <div id="catchphrases">
 
-                </div>
             </div>
         </div>
         <div class="right">
