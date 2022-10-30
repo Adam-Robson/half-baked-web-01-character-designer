@@ -18,10 +18,12 @@ body {
     --gutter: 30px;
     --footer-height: 25px;
 
-    font-family: 'Titillium Web', sans-serif;
+    font-family: Monday Party, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
     background-color: black;
-    background-image: url('../assets/animals.png');
+    background-image: url('../assets/bluehops.png');
     background-size: 400px;
+
 }
 
 header {
@@ -94,7 +96,7 @@ footer {
 
 main {
     display: flex;
-    background-color: lightskyblue;
+    background-color: rgb(132, 173, 208);
     margin: 0 auto;
     width: 100%;
     max-width: 800px;
@@ -106,11 +108,9 @@ main {
 .picker {
     display: flex;
     flex-direction: column;
-    background: aliceblue;
-}
-
-.left {
-    overflow: scroll;
+    background: rgb(132, 173, 208);
+    border: 3px navy solid;
+    padding: 4px;
 }
 
 .left, .right {
